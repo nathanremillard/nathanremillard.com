@@ -63,4 +63,28 @@ import Layout from '../layouts/Layout.astro';
     .sidebar-block p { font-size: 14px; color: #3D4654; line-height: 1.6; }
     .sidebar-link { font-size: 14px; color: #2D5016; text-decoration: none; font-weight: 500; }
     .sidebar-link:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+        .about-hero {
+            padding: 48px 24px 40px;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        .two-col {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        .sidebar {
+            border-left: none;
+            border-top: 1px solid #DDE0D8;
+            padding-left: 0;
+            padding-top: 32px;
+        }
+        .divider {
+            margin: 0 24px;
+        }
+        .section {
+            padding: 40px 24px;
+        }
+    }
 </style>
