@@ -1,11 +1,105 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<Layout title="Nathan J. Remillard – Policy Researcher">
+	<main>
+		<section class="hero">
+			<p class="hero-label">Policy researcher</p>
+			<h1>Nathan J. Remillard</h1>
+			<p class="hero-bio">Scholar and policy researcher focused on <em>drug policy,</em> <em>environmental policy,</em> and <em>health care policy</em> — with the range to go wherever the question leads. I care about rigorous analysis, honest and accessible writing, the wellbeing of people, and research that actually has something to say.</p>
+			<div class="pill-row">
+				<span class="pill">Drug policy</span>
+				<span class="pill">Environmental policy</span>
+				<span class="pill">Health care policy</span>
+				<span class="pill">Policy analysis</span>
+				<span class="pill">Generalist scholar</span>
+			</div>
+			<div class="cta-row">
+				<a href="/publications" class="btn-main">View publications</a>
+				<a href=/about" class="btn-ghost">About me</a>
+			</div>
+		</section>
 
-<Layout>
-	<Welcome />
+		<div class="divider"></div>
+
+		<section class="section">
+			<div class="section-header">
+				<span class="section-title">Research areas</span>
+				<div class="section-line"></div>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<p class="card-topic">Drug policy</p>
+					<p class="card-title">Criminalization, harm reduction, epistemic power, lived experience, and what the evidence actually shows</p>
+					<p class="card-desc">How policy shapes drug use outcomes, who bears the costs, whose knowledges are priviledged in decision making, and where reform is overdue.</p>
+				</div>
+				<div class="card"> 
+					<p class="card-topic">Environmental policy</p>
+					<p class="card-title">Pollution, climate change, and who pays the price</p>
+					<p class="card-desc">Environmental burdens don't fall equally. I'm interested in the interaction of environmental policy, population health, and the communities that absorb the cost of inaction.</p>
+				</div>
+				<div class="card">
+					<p class="card-topic">Health care policy</p>
+					<p class="card-title">Access, equity, reform, and the architecture of American care</p>
+					<p class="card-desc">Examining how health systems are built, who they serve well and who they overlook, where reforms are needed, and how to optimize to improve health outcomes at the population level.</p>
+				</div>
+				<div class="card">
+					<p class="card-topic">Other work</p>
+					<p class="card-title">Teaching, analysis, creative endeavors, and projects that do not fit one box </p>
+					<p class="card-desc">TA experience, generalist scholarship, and work that crosses the usual disciplinary lines.</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="section>
+			<div class="section-header">
+				<span class="section-title">Recent writing</span>
+				<div class="section-line"></div>
+			</div>
+			<div class="writing-list">
+				<div class="writing-row">
+					<a class="writing-title" href="/writing">First post coming soon!</a>
+					<div class="writing-right">
+						<span class="writing-tag">Drug policy</span>
+						<span class="writing-date">2026</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </Layout>
+
+<style>
+	main { max-width: 1000px; margin: 0 auto; }
+	.hero { padding: 80px 48px 64px; max-width: 860px; }
+	.hero-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 20px; }
+	h1 { font-size: 48px; font-weight: 700; line-height: 1.1; color: #1C2128; margin-bottom: 24px; letter-spacing: -0.02em; }
+	.hero-bio { font-size: 18px; line-height: 1.8; color: #3D4654; max-width: 600px; margin-bottom: 36px; }
+	.hero-bio em { font-style: normal; color: #2D5016; font-weight: 500; }
+	.pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 40px; }
+	.pill { font-size: 12px; padding: 6px 14px; border-radius: 3px; background: #E8EDE4; color: #2D5016; font-weight: 500; letter-spacing: 0.02em; }
+	.cta-row { display: flex; gap: 12px; }
+	.btn-main { font-size: 13px; font-weight: 600; padding: 11px 22px; background: #2D5016; color: #F7F7F5; border-radius: 3px; text-decoration: none; letter-spacing: 0.02em; }
+	.btn-main:hover { background: #3A6B1E; }
+	.btn-ghost { font-size: 13px; font-weight: 500; padding: 11px 22px; background: transparent; color: #1C2128; border: 1px solid #B8BDB5; border-radius: 3px; text-decoration: none; }
+	.btn-ghost:hover { border-color: #2D5016; color:#2D5016; }
+	.divider { height: 1px; bagkround: #DDE0D8; margin: 0 48px; }
+	.section { padding: 52px 48px; }
+	.section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+	.section-title { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A9099; font-weight: 600; white-space: nowrap; }
+	.section-line { flex: 1; height: 1px; background: #DDE0D8; }
+	.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #DDE0D8; border: 1px solid #DDE0D8; border-radius: 4px; overflow: hidden; }
+	.card { background: #F7F7F5; padding: 28px 24px; }
+	.card-topic { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 10px; }
+	.card-title { font-size: 15px; font-weight: 600; color: #1C2128; line-height: 1.4; margin-bottom: 10px; }
+	.card-desc { font-size: 13px; color: #5A6170; line-height: 1.65; }
+	.writing-list { display: flex; flex-direction: column; }
+	.writing-row { display: flex; justify-content: space-between; align-items: baseline; padding: 16px 0; border-bottom: 1px solid #DDE0D8; gap: 20px; }
+	.writing-title { font-size: 15px; color: #1C2128; text-decoration: none; font-weight: 500; }
+	.writing-title:hover { color: #2D5016; }
+	.writing-right { display: flex; align-items: center; gap: 16px; }
+	.writing-tag { font-size: 11px; background: #E8EDE4; color: #2D5016; padding: 3px 10px; border-radius: 2px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+	.writing-date { font-size: 12px; color: #8A9099; white-space: nowrap; }
+</style>
