@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+    title="Page not found — Nathan J. Remillard"
+    description="This page does not exist."
+>
+    <main>
+        <section class="hero">
+            <p class="label">404</p>
+            <h1>Page not found</h1>
+            <p class="subhead">This page does not exist or may have moved. Try heading back to the homepage.</p>
+            <a href="/" class="btn-main">Back to home</a>
+        </section>
+    </main>
+</Layout>
+
+<style>
+  main { max-width: 1000px; margin: 0 auto; }
+  .hero { padding: 72px 48px; }
+  .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 16px; }
+  h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; color: #1C2128; margin-bottom: 20px; }
+  .subhead { font-size: 18px; line-height: 1.75; color: #3D4654; max-width: 500px; margin-bottom: 36px; }
+  .btn-main { font-size: 13px; font-weight: 600; padding: 11px 22px; background: #2D5016; color: #F7F7F5; border-radius: 3px; text-decoration: none; letter-spacing: 0.02em; display: inline-block; }
+  .btn-main:hover { background: #3A6B1E; }
+
+  @media (max-width: 768px) {
+    .hero { padding: 48px 24px; }
+    h1 { font-size: 32px; }
+    .subhead { font-size: 16px; }
+  }
+</style>
