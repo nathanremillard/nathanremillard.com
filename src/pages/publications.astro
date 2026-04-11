@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Publications — Nathan J. Remillard">
+    <main>
+        <section class="pub-hero">
+            <p class="label">Publications</p>
+            <h1>Research & Reports</h1>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Research reports</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-meta">
+                    <span class="pub-year">2026</span>
+                    <span class="pub-tag">Education policy</span>
+                </div>
+                <div class="pub-body">
+                    <h2 class="pub-title">Analysis of West Virginia's State School Aid Funding Formula: Recommendations to Enhance Adequace, Fairness, and Efficiency of State Funding for Education</h2>
+                    <p class="pub-authors">Master, B.K., Phillips, B., Senator, B., Remillard, N., Muggy, L., & Sahoo, S.K.</p>
+                    <p class="pub-publisher">RAND Corporation</p>
+                    <p class="pub-abstract">Prepared for the West Virginia House of Delegates, this report provides and independent assessment of the state's school aid funding formula and identifies opportunities for improvement, drawing on prior research, national benchmarks, and analysis of state and national data sets.</p>
+                    <div class="pub-links">
+                        <a href="https://www.rand.org/pubs/research_reports/RRA4161-1.html" target="_blank" class="pub-link">View at RAND →</a>
+                        <a href="https://doi.org/10.7249/RRA4161-1" target="_blank" class="pub-link">DOI →</a>
+                        <a href="https://content.rand.org/dam/rand/pubs/research_reports/RRA4100/RRA4161-1/RAND_RRA41261-1.pdf" target="_blank" class="pub-link">Download PDF →</a>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    </main>
+</Layout>
+
+<style>
+    main { max-width: 1000px; margin: 0 auto; }
+    .pub-hero { padding: 72px 48px 56px; }
+    .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 16px; }
+    h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; color: #1C2128;  }
+    .divider { height: 1px; background: #DDE0D8; margin: 0 48px; }
+    .section { padding: 52px 48px; }
+    .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; }
+    .section-title { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A9099; font-weight: 600; white-space: nowrap; }
+    .section-line { flex: 1; height: 1px; background: #DDE0D8; }
+    .pub-item { display: grid; grid-template-columns: 100px 1fr; gap: 32px; padding: 32px 0; border-bottom: 1px solid #DDE0D8; }
+    .pub-item:last-child { border-bottom: none; }
+    .pub-meta { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+    .pub-year { font-size: 13px; font-weight: 600; color: #1C2128; }
+    .pub-tag { font-size: 11px; background: #E8EDE4; color: #2D5016; padding: 3px 8px; border-radius: 2px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; text-align: center; }
+    .pub-title { font-size: 17px; font-weight: 600; color: #1C2128; line-height: 1.4; margin-bottom: 8px; }
+    .pub-authors { font-size: 13px; color: #5A6170; margin-bottom: 4px; }
+    .pub-publisher { font-size: 13px; color: #4A6741; font-weight: 500; margin-bottom: 12px; }
+    .pub-abstract { font-size: 14px; color: #3D4654; line-height: 1.7; margin-bottom: 16px; }
+    .pub-links { display: flex; gap: 20px; }
+    .pub-link { font-size: 13px; color: #2D5016; text-decoration: none; font-weight: 500; }
+    .pub-link:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+        .pub-hero { padding: 48px 24px 40px; }
+        h1 { font-size: 32px; }
+        .divider { margin: 0 24px; }
+        .section { padding: 40px 24px; }
+        .pub-item { grid-template-columns: 1fr; gap: 12px; }
+        .pub-meta { flex-direction: row; align-items: center; }
+        .pub-links { flex-wrap: wrap; }
+    }
+</style>
