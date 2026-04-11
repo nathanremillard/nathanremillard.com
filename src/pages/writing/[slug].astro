@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('writing', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Layout title={`${post.data.title} — Nathan J. Remillard`}>
+  <main>
+    <article>
+      <section class="post-hero">
+        <a href="/writing" class="back">← Back to writing</a>
+        <p class="label">{post.data.tag}</p>
+        <h1>{post.data.title}</h1>
+        <p class="post-date">
+          {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+      </section>
+      <div class="divider"></div>
+      <section class="post-body">
+        <Content />
+      </section>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  main { max-width: 1000px; margin: 0 auto; }
+  .post-hero { padding: 72px 48px 48px; max-width: 740px; }
+  .back { font-size: 13px; color: #5A6170; text-decoration: none; display: block; margin-bottom: 32px; }
+  .back:hover { color: #2D5016; }
+  .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 16px; }
+  h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.02em; color: #1C2128; line-height: 1.2; margin-bottom: 16px; }
+  .post-date { font-size: 13px; color: #8A9099; }
+  .divider { height: 1px; background: #DDE0D8; margin: 0 48px; }
+  .post-body { padding: 48px 48px 80px; max-width: 740px; }
+  .post-body :global(p) { font-size: 17px; line-height: 1.85; color: #3D4654; margin-bottom: 24px; }
+  .post-body :global(h2) { font-size: 22px; font-weight: 600; color: #1C2128; margin: 40px 0 16px; }
+  .post-body :global(h3) { font-size: 18px; font-weight: 600; color: #1C2128; margin: 32px 0 12px; }
+  .post-body :global(a) { color: #2D5016; }
+  .post-body :global(blockquote) { border-left: 3px solid #DDE0D8; padding-left: 20px; margin: 32px 0; color: #5A6170; font-style: italic; }
+  .post-body :global(ul), .post-body :global(ol) { padding-left: 24px; margin-bottom: 24px; }
+  .post-body :global(li) { font-size: 17px; line-height: 1.85; color: #3D4654; margin-bottom: 8px; }
+
+  @media (max-width: 768px) {
+    .post-hero { padding: 48px 24px 40px; }
+    h1 { font-size: 28px; }
+    .divider { margin: 0 24px; }
+    .post-body { padding: 40px 24px 60px; }
+    .post-body :global(p), .post-body :global(li) { font-size: 16px; }
+  }
+</style>
