@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Projects — Nathan J. Remillard">
+    <main>
+        <section class="projects-hero">
+            <p class="label">Projects</p>
+            <h1>Other work</h1>
+            <p class="subhead">Teaching, tools, and hands-on/creative work that influences how I think, conduct research, and operate as a person and global citizen.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Tools & Creative work</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">Tool</span>
+                    <span class="status-dot"></span>
+                    <span class="status-label">In progress</span>
+                </div>
+                <div class="project-body">
+                    <h2>Epistemic Reframer</h2>
+                    <p>An interactive tool that analyzed drug policy texts to detect their underlying epistemic framing(s), and reframes them through alternative lenses. Built at the intersection of policy analysis, philosophy of knowledge, and a deliberately grotesque bubblegum Y2K MySpace aesthetic for the campy fun of it all. Intended for use in future dissertation research, with a potential public release to follow.</p>
+                    <div class="method-row">
+                        <span class="method-tag">Drug policy</span>
+                        <span class="method-tag">Epistemology</span>
+                        <span class="method-tag">Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Teaching</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">TA</span>
+                    <span class="status-dot complete"></span>
+                    <span class="status-label">2023</span>
+                </div>
+                <div class="project-body">
+                    <h2>PSYCH 306 — Research Methods in Psychology</h2>
+                    <p>Teaching assistant for an undergraduate research methods course at the University of Auckland. Supported students in developing quantitative and qualitative research skills, study design, data analysis/R programming, and Kaupapa Māori research principles.</p>
+                    <div class="project-body">
+                        <span class="method-tag">University of Auckland</span>
+                        <span class="method-tag">Undergraduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">TA</span>
+                    <span class="status-dot active"></span>
+                    <span class="status-label">2026</span>
+                </div>
+                <div class="project-body">
+                    <h2>Statistics for Policy Analysis II</h2>
+                    <p>Teaching assistant for a graduate-level econometrics course at the RAND School of Public Policy, supporting students in econometric study design, Stata/R programming, and advanced quantitative methods for public policy research.</p>
+                    <div class="method-row">
+                        <span class="method-tag">RAND School of Public Policy</span>
+                        <span class="method-tag">Graduate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Harm reduction</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">Field</span>
+                    <span class="status-dot complete"></span>
+                    <span class="status-label">Past</span>
+                </div>
+                <div class="project-body">
+                    <h2>Direct harm reduction services</h2>
+                    <p>Worked directly in harm reduction, providing needle exchange services, drug purity testing, and street medicine to people who use drugs. This work is where my research commitments became personal — and where I learned that the gap between policy and lived experience is measured in human lives.</p>
+                    <div class="method-row">
+                        <span class="method-tag">Needle exchange</span>
+                        <span class="method-tag">Purity testing</span>
+                        <span class="method-tag">Street medicine</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</Layout>
+
+<style>
+  main { max-width: 1000px; margin: 0 auto; }
+  .projects-hero { padding: 72px 48px 56px; max-width: 680px; }
+  .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 16px; }
+  h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; color: #1C2128; margin-bottom: 20px; }
+  .subhead { font-size: 18px; line-height: 1.75; color: #3D4654; }
+  .divider { height: 1px; background: #DDE0D8; margin: 0 48px; }
+  .section { padding: 52px 48px; }
+  .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 36px; }
+  .section-title { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A9099; font-weight: 600; white-space: nowrap; }
+  .section-line { flex: 1; height: 1px; background: #DDE0D8; }
+  .project-item { display: grid; grid-template-columns: 120px 1fr; gap: 32px; padding: 32px 0; border-bottom: 1px solid #DDE0D8; }
+  .project-item:last-child { border-bottom: none; }
+  .project-meta { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+  .project-tag { font-size: 11px; background: #E8EDE4; color: #2D5016; padding: 3px 8px; border-radius: 2px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; text-align: center; }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #4A6741; margin: 4px auto 0; }
+  .status-dot.complete { background: #8A9099; }
+  .status-label { font-size: 11px; color: #8A9099; text-align: center; }
+  .project-body h2 { font-size: 17px; font-weight: 600; color: #1C2128; line-height: 1.4; margin-bottom: 10px; }
+  .project-body p { font-size: 14px; color: #3D4654; line-height: 1.75; margin-bottom: 14px; }
+  .method-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .method-tag { font-size: 11px; padding: 3px 10px; border-radius: 2px; border: 1px solid #DDE0D8; color: #5A6170; font-weight: 500; letter-spacing: 0.03em; }
+
+  @media (max-width: 768px) {
+    .projects-hero { padding: 48px 24px 40px; }
+    h1 { font-size: 32px; }
+    .subhead { font-size: 16px; }
+    .divider { margin: 0 24px; }
+    .section { padding: 40px 24px; }
+    .project-item { grid-template-columns: 1fr; gap: 12px; }
+    .project-meta { flex-direction: row; align-items: center; }
+    .status-dot { margin: 0; }
+  }
+</style>
