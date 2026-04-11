@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contact — Nathan J. Remillard">
+    <main>
+        <section class="contact-hero">
+            <p class="label">Contact</p>
+            <h1>Get in touch</h1>
+            <p class="subhead">Whether you're interested in my research, have a collaboration in mind, or just want to talk policy — I'd love to connect!</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="contact-grid">
+                <div class="contact-block">
+                    <p class="block-label">Email</p>
+                    <a href="mailto:nathanremillard5@gmail.com" class="contact-link">nathanremillard5@gmail.com</a>
+                </div>
+                <div class="contact-block">
+                    <p class="block-label">LinkedIn</p>
+                    <a href="https://linkedin.com/in/nathanremillard" target="_blank" class="contact-link">linkedin.com/in/nathanremillard</a>
+                </div>
+                <div class="contact-block">
+                    <p class="block-label">Google Scholar</p>
+                    <a href="https://scholar.google.com/citations?user=fNv21qEAAAAJ&hl=en" target="_blank" class="contact-link">View profile →</a>
+                </div>
+                <div class="contact-block">
+                    <p class="block-label">CV</p>
+                    <a href="/cv.pdf" class="contact-link">Download PDF →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+  main { max-width: 1000px; margin: 0 auto; }
+  .contact-hero { padding: 72px 48px 56px; max-width: 640px; }
+  .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 16px; }
+  h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; color: #1C2128; margin-bottom: 20px; }
+  .subhead { font-size: 18px; line-height: 1.75; color: #3D4654; }
+  .divider { height: 1px; background: #DDE0D8; margin: 0 48px; }
+  .section { padding: 52px 48px; }
+  .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #DDE0D8; border: 1px solid #DDE0D8; border-radius: 4px; overflow: hidden; max-width: 600px; }
+  .contact-block { background: #F7F7F5; padding: 28px 24px; }
+  .block-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A9099; font-weight: 600; margin-bottom: 10px; }
+  .contact-link { font-size: 15px; color: #2D5016; text-decoration: none; font-weight: 500; }
+  .contact-link:hover { text-decoration: underline; }
+
+  @media (max-width: 768px) {
+    .contact-hero { padding: 48px 24px 40px; }
+    h1 { font-size: 32px; }
+    .subhead { font-size: 16px; }
+    .divider { margin: 0 24px; }
+    .section { padding: 40px 24px; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }  
+</style>
