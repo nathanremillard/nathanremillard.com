@@ -1,0 +1,159 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Research — Nathan J. Remillard">
+    <main>
+        <section class="research-hero">
+            <p class="label">Research</p>
+            <h1>Work & Interests</h1>
+            <p class="statement">I do this work because I believe research should deliver real, actionable results for ordinary people. I am committed to leveraging every available method to inform beneficial systemic change, and I treat null results with the ssame seriousness as positive findings. I approach my work with as much neutrality as the data and context allow, while recognizing that equity is often the necessary lens to do rigorous policy research honestly. Good research, in my view, is research that makes systems work better for the people they were built to serve. Contributing to academic literature will always come second.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Current projects</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">Independent</span>
+                    <span class="status-dot active"></span>
+                    <span class="status-label">In progress</span>
+                </div>
+                <div class="project-body">
+                    <h2>Safe consumption sites: Beyond the Evidence Gap</h2>
+                    <p>An independent empirical analysis examining safe consumption sites in Aotearoa New Zealand situated within a critical governance and policy discourse framework.</p>
+                    <div class="method-row">
+                        <span class="method-tag">Quantitative</span>
+                        <span class="method-tag">Drug policy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">Collaborative</span>
+                    <span class="status-dot active"></span>
+                    <span class="status-label">In progress</span>
+                </div>
+                <div class="project-body">
+                    <h2>Emerging illicit substances: Trends, risks, and regulatory response</h2>
+                    <p> A collaborative research project tracking emerging illicit substances, examining associated risks, and evaulating the regulatory gaps in a rapidly shifting landscape.</p>
+                    <div class="method-row">
+                        <span class="method-row">
+                            <span class="method-tag">Quantitative</span>
+                            <span class="method-tag">Drug policy</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <div class="project-meta">
+                    <span class="project-tag">Collaborative</span>
+                    <span class="status-dot active"></span>
+                    <span class="status-label">In progress</span>
+                </div>
+                <div class="project-body">
+                    <h2>Reforming health systems: Struture, access, markets, and populations outcomes</h2>
+                    <p>Examining how health system structure and reform efforts affect access to care and population-level health outcomes for a client. Working to inform future changes.</p>
+                    <div class="method-row">
+                        <span class="method-tag">Mixed methods</span>
+                        <span class="method-tag">Health care policy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-meta">
+                    <div class="project-meta">
+                        <span class="project-tag">Collaborative</span>
+                        <span class="status-dot active"></span>
+                        <span class="status-label">In progress</span>
+                    </div>
+                    <div class="project-body">
+                        <h2>Investment in education and later-life cognitive health outcomes</h2>
+                        <p>A project investigating the relationship between education investments and cognitive health outcomes in later life, contributing to the broader literature on the long-term returns of public education spending.</p>
+                        <div class="method-row">
+                            <span class="method-tag">Mixed methods</span>
+                            <span class="method-tag">Education policy</span>
+                            <span class="method-tag">Health policy</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Research interests</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <p class="interest-title">Drug policy</p>
+                    <p class="interest-desc">Harm reduction, safe consumption, (de)criminalization, and the politics of evidence in regulation and policymaking.</p>
+                </div>
+                <div class="interest-item">
+                    <p class="interest-title">Health care policy</p>
+                    <p class="interest-desc">System reform, access and equity, population health, and the architecture of American care.</p>
+                </div>
+                <div class="interest-item">
+                    <p class="interest-title">Environmental policy</p>
+                    <p class="interest-desc">Environmental burden, climate change/equity, and the communities that absorb the cost of inaction.</p>
+                </div>
+                <div class="interest-item">
+                    <p class="interest-title">Education policy</p>
+                    <p class="interest-desc">Education access, investment, long-term returns, public education reform, and school funding.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</Layout>
+
+<style>
+  main { max-width: 1000px; margin: 0 auto; }
+  .research-hero { padding: 72px 48px 56px; }
+  .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A6741; font-weight: 600; margin-bottom: 16px; }
+  h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; color: #1C2128; margin-bottom: 24px; }
+  .statement { font-size: 17px; line-height: 1.85; color: #3D4654; max-width: 740px; }
+  .divider { height: 1px; background: #DDE0D8; margin: 0 48px; }
+  .section { padding: 52px 48px; }
+  .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 36px; }
+  .section-title { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8A9099; font-weight: 600; white-space: nowrap; }
+  .section-line { flex: 1; height: 1px; background: #DDE0D8; }
+  .project-list { display: flex; flex-direction: column; }
+  .project-item { display: grid; grid-template-columns: 120px 1fr; gap: 32px; padding: 32px 0; border-bottom: 1px solid #DDE0D8; }
+  .project-item:last-child { border-bottom: none; }
+  .project-meta { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+  .project-tag { font-size: 11px; background: #E8EDE4; color: #2D5016; padding: 3px 8px; border-radius: 2px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; text-align: center; }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #4A6741; margin: 4px auto 0; }
+  .status-label { font-size: 11px; color: #8A9099; text-align: center; }
+  .project-body h2 { font-size: 17px; font-weight: 600; color: #1C2128; line-height: 1.4; margin-bottom: 10px; }
+  .project-body p { font-size: 14px; color: #3D4654; line-height: 1.75; margin-bottom: 14px; }
+  .method-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .method-tag { font-size: 11px; padding: 3px 10px; border-radius: 2px; border: 1px solid #DDE0D8; color: #5A6170; font-weight: 500; letter-spacing: 0.03em; }
+  .interests-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #DDE0D8; border: 1px solid #DDE0D8; border-radius: 4px; overflow: hidden; }
+  .interest-item { background: #F7F7F5; padding: 28px 24px; }
+  .interest-title { font-size: 15px; font-weight: 600; color: #1C2128; margin-bottom: 8px; }
+  .interest-desc { font-size: 13px; color: #5A6170; line-height: 1.65; }
+
+  @media (max-width: 768px) {
+    .research-hero { padding: 48px 24px 40px; }
+    h1 { font-size: 32px; }
+    .statement { font-size: 16px; }
+    .divider { margin: 0 24px; }
+    .section { padding: 40px 24px; }
+    .project-item { grid-template-columns: 1fr; gap: 12px; }
+    .project-meta { flex-direction: row; align-items: center; }
+    .status-dot { margin: 0; }
+    .interests-grid { grid-template-columns: 1fr; }
+  }
+</style>
