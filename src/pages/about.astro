@@ -22,6 +22,10 @@ import Layout from '../layouts/Layout.astro';
                 <p>That shift from the individual to the system is the thread running through everything I do. Policy research appeals to me because the most interesting questions are never really about one person's choices. They are about the structures and institutions those choices happen inside of: how laws are written, how resources are distributed, which forms of knowledge are privileged, and how institutions fail the people they're supposed to serve.</p>
                 <p>I'm a generalist by disposition and a scholar by training. I don't think those are in tension. I believe the most useful policy analysts are the ones who can move across domains, follow a question wherever it leads, and communicate clearly to people outside of their primary fields of interest. That's what I'm currently building toward! If any of that sounds like work you're doing too, I'd love to connect.</p>
             </div>
+            <div class="dog-photo">
+                <img src="/Ruby.jpeg" alt="Ruby, Nathan's pride and joy" />
+                <p class="dog-caption">Ruby, Nathan's pride and joy</p>
+            </div>
             <div class="sidebar">
                 <div class="sidebar-block">
                     <p class="sidebar-label">Affiliation</p>
@@ -66,6 +70,9 @@ import Layout from '../layouts/Layout.astro';
     .sidebar-block p { font-size: 14px; color: #3D4654; line-height: 1.6; }
     .sidebar-link { font-size: 14px; color: #2D5016; text-decoration: none; font-weight: 500; }
     .sidebar-link:hover { text-decoration: underline; }
+    .dog-photo { margin-top: 40px; }
+    .dog-photo img { width: 100%; max-width: 360px; border-radius: 4px; display: block; }
+    .dog-caption { font-size: 12px; color: #8A9099; margin-top: 8px; }
     @media (max-width: 768px) {
         .about-hero {
             padding: 48px 24px 40px;
