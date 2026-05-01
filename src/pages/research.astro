@@ -61,7 +61,7 @@ import Layout from '../layouts/Layout.astro';
                     <span class="status-label">In progress</span>
                 </div>
                 <div class="project-body">
-                    <h2>Reforming health systems: Struture, access, markets, and populations outcomes</h2>
+                    <h2>Reforming health systems: Structure, access, markets, and populations outcomes</h2>
                     <p>Examining how health system structure and reform efforts affect access to care and population-level health outcomes for a client. Working to inform future changes.</p>
                     <div class="method-row">
                         <span class="method-tag">Mixed methods</span>
@@ -83,6 +83,55 @@ import Layout from '../layouts/Layout.astro';
                             <span class="method-tag">Mixed methods</span>
                             <span class="method-tag">Education policy</span>
                             <span class="method-tag">Health policy</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-title">Under review</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-list">
+
+                <div class="project-item">
+                    <div class="project-meta">
+                        <span class="project-tag">Independent</span>
+                        <span class="status-dot review"></span>
+                        <span class="status-label">Under review</span>
+                    </div>
+                    <div class="project-body">
+                        <h2>AI risk as epistemic governance: power, knowledge, and Large Language Models</h2>
+                        <p>Dominant AI risk debates, whether focused on catastrophic future harms or "normal technology management", share a common assumption: risk is instrinsic to AI systems and addressable through technical evaluation and control. This paper challenges that assumption, arguing that the most consequential risks of LLMs are epistemic and institutional.</p>
+                        <div class="method-row">
+                            <span class="method-tag">AI ethics</span>
+                            <span class="method-tag">Epistemology</span>
+                            <span class="method-tag">Governance</span>
+                            <span class="method-tag">Risk governance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-meta">
+                        <span class="project-tag">Collaborative</span>
+                        <span class="status-dot review"></span>
+                        <span class="status-label">Under review</span>
+                    </div>
+                    <div class="project-body">
+                        <h2>Equity commitments and fragmented governance in urban transit</h2>
+                        <p>A collaborative study investigating why equity commitments in urban transit systems persistently fail to translate into equitable outcomes, using LA Metro as a cast study in fragmented governance and the structural limitations of institutional reform.</p>
+                        <div class="method-row">
+                            <span class="method-tag">Urban policy</span>
+                            <span class="method-tag">Transportation</span>
+                            <span class="method-tag">Equity</span>
+                            <span class="method-tag">Organizational theory</span>
                         </div>
                     </div>
                 </div>
@@ -137,6 +186,7 @@ import Layout from '../layouts/Layout.astro';
   .project-meta { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
   .project-tag { font-size: 11px; background: #E8EDE4; color: #2D5016; padding: 3px 8px; border-radius: 2px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; text-align: center; }
   .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #4A6741; margin: 4px auto 0; }
+  .status-dot.review { background: #B45309; }
   .status-label { font-size: 11px; color: #8A9099; text-align: center; }
   .project-body h2 { font-size: 17px; font-weight: 600; color: #1C2128; line-height: 1.4; margin-bottom: 10px; }
   .project-body p { font-size: 14px; color: #3D4654; line-height: 1.75; margin-bottom: 14px; }
